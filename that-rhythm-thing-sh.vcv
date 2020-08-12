@@ -1,0 +1,1888 @@
+{
+  "version": "1.1.6",
+  "modules": [
+    {
+      "id": 79,
+      "plugin": "ImpromptuModular",
+      "version": "1.1.8",
+      "model": "Clocked",
+      "params": [
+        {
+          "id": 0,
+          "value": 256.0
+        },
+        {
+          "id": 1,
+          "value": -0.0
+        },
+        {
+          "id": 2,
+          "value": -5.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0239999685
+        },
+        {
+          "id": 6,
+          "value": 0.00299996976
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.5
+        },
+        {
+          "id": 9,
+          "value": 0.5
+        },
+        {
+          "id": 10,
+          "value": 0.5
+        },
+        {
+          "id": 11,
+          "value": 0.5
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 831,
+      "rightModuleId": 700,
+      "data": {
+        "panelTheme": 1,
+        "running": false,
+        "displayDelayNoteMode": true,
+        "bpmDetectionMode": false,
+        "resetOnStartStop": 0,
+        "ppqn": 4,
+        "resetClockOutputsHigh": false,
+        "momentaryRunInput": true,
+        "clockMaster": false
+      },
+      "pos": [
+        28,
+        0
+      ]
+    },
+    {
+      "id": 598,
+      "plugin": "SubmarineFree",
+      "version": "1.1.6",
+      "model": "TD-202",
+      "params": [],
+      "leftModuleId": 599,
+      "rightModuleId": 602,
+      "data": {
+        "text": "Output",
+        "fg": "#ffa52d",
+        "bg": "#00000000"
+      },
+      "pos": [
+        60,
+        0
+      ]
+    },
+    {
+      "id": 599,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 700,
+      "rightModuleId": 598,
+      "data": {
+        "audio": {
+          "driver": 5,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        50,
+        0
+      ]
+    },
+    {
+      "id": 600,
+      "plugin": "SubmarineFree",
+      "version": "1.1.6",
+      "model": "TD-202",
+      "params": [],
+      "leftModuleId": 698,
+      "data": {
+        "text": "Final Mix",
+        "fg": "#ffa52d",
+        "bg": "#00000000"
+      },
+      "pos": [
+        91,
+        1
+      ]
+    },
+    {
+      "id": 601,
+      "plugin": "SubmarineFree",
+      "version": "1.1.6",
+      "model": "TD-202",
+      "params": [],
+      "leftModuleId": 604,
+      "rightModuleId": 836,
+      "data": {
+        "text": "Aux B - DLAY",
+        "fg": "#0aff13",
+        "bg": "#00000000"
+      },
+      "pos": [
+        88,
+        0
+      ]
+    },
+    {
+      "id": 602,
+      "plugin": "Valley",
+      "version": "1.0.1",
+      "model": "Plateau",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.8599968
+        },
+        {
+          "id": 4,
+          "value": 5.75499916
+        },
+        {
+          "id": 5,
+          "value": 0.535999894
+        },
+        {
+          "id": 6,
+          "value": 10.0
+        },
+        {
+          "id": 7,
+          "value": 0.396067023
+        },
+        {
+          "id": 8,
+          "value": 7.23999929
+        },
+        {
+          "id": 9,
+          "value": 10.0
+        },
+        {
+          "id": 10,
+          "value": 0.291000009
+        },
+        {
+          "id": 11,
+          "value": 0.384499997
+        },
+        {
+          "id": 12,
+          "value": 4.26799965
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 598,
+      "rightModuleId": 603,
+      "data": {
+        "frozen": false,
+        "freezeToggle": false,
+        "panelStyle": 0,
+        "tuned": 0,
+        "diffuseInput": 0,
+        "preDelayCVSens": 0,
+        "inputSensitivity": 0,
+        "outputSaturation": 0
+      },
+      "pos": [
+        62,
+        0
+      ]
+    },
+    {
+      "id": 603,
+      "plugin": "SubmarineFree",
+      "version": "1.1.6",
+      "model": "TD-202",
+      "params": [],
+      "leftModuleId": 602,
+      "rightModuleId": 604,
+      "data": {
+        "text": "Aux A - RVRB",
+        "fg": "#0aff13",
+        "bg": "#00000000"
+      },
+      "pos": [
+        74,
+        0
+      ]
+    },
+    {
+      "id": 604,
+      "plugin": "AlrightDevices",
+      "version": "1.0.3",
+      "model": "Chronoblob2",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0494999997
+        },
+        {
+          "id": 1,
+          "value": 0.0646497235
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": -0.0869999826
+        },
+        {
+          "id": 5,
+          "value": 0.110999994
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 603,
+      "rightModuleId": 601,
+      "data": {
+        "delay_mode": 1,
+        "hold_behavior": 0,
+        "sync_prescaler": 6
+      },
+      "pos": [
+        76,
+        0
+      ]
+    },
+    {
+      "id": 697,
+      "plugin": "MindMeldModular",
+      "version": "1.1.9",
+      "model": "MixMasterJr",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.891250908
+        },
+        {
+          "id": 1,
+          "value": 0.891250908
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.891250908
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        },
+        {
+          "id": 5,
+          "value": 1.0
+        },
+        {
+          "id": 6,
+          "value": 1.0
+        },
+        {
+          "id": 7,
+          "value": 1.0
+        },
+        {
+          "id": 8,
+          "value": 1.0
+        },
+        {
+          "id": 9,
+          "value": 1.0
+        },
+        {
+          "id": 10,
+          "value": 0.242999762
+        },
+        {
+          "id": 11,
+          "value": 0.728500485
+        },
+        {
+          "id": 12,
+          "value": 0.5
+        },
+        {
+          "id": 13,
+          "value": 0.5
+        },
+        {
+          "id": 14,
+          "value": 0.5
+        },
+        {
+          "id": 15,
+          "value": 0.5
+        },
+        {
+          "id": 16,
+          "value": 0.5
+        },
+        {
+          "id": 17,
+          "value": 0.5
+        },
+        {
+          "id": 18,
+          "value": 0.5
+        },
+        {
+          "id": 19,
+          "value": 0.5
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        },
+        {
+          "id": 36,
+          "value": 0.0
+        },
+        {
+          "id": 37,
+          "value": 0.0
+        },
+        {
+          "id": 38,
+          "value": 0.0
+        },
+        {
+          "id": 39,
+          "value": 0.0
+        },
+        {
+          "id": 40,
+          "value": 1.0
+        },
+        {
+          "id": 41,
+          "value": 0.0
+        },
+        {
+          "id": 42,
+          "value": 0.0
+        },
+        {
+          "id": 43,
+          "value": 1.0
+        },
+        {
+          "id": 44,
+          "value": 0.0
+        },
+        {
+          "id": 45,
+          "value": 0.0
+        },
+        {
+          "id": 46,
+          "value": 0.0
+        },
+        {
+          "id": 47,
+          "value": 0.0
+        },
+        {
+          "id": 48,
+          "value": 0.0
+        },
+        {
+          "id": 49,
+          "value": 0.0
+        },
+        {
+          "id": 50,
+          "value": 0.0
+        },
+        {
+          "id": 51,
+          "value": 0.0
+        },
+        {
+          "id": 52,
+          "value": 118.609009
+        },
+        {
+          "id": 53,
+          "value": 307.126007
+        },
+        {
+          "id": 54,
+          "value": 13.0
+        },
+        {
+          "id": 55,
+          "value": 13.0
+        },
+        {
+          "id": 56,
+          "value": 13.0
+        },
+        {
+          "id": 57,
+          "value": 13.0
+        },
+        {
+          "id": 58,
+          "value": 13.0
+        },
+        {
+          "id": 59,
+          "value": 13.0
+        },
+        {
+          "id": 60,
+          "value": 8750.0
+        },
+        {
+          "id": 61,
+          "value": 20010.0
+        },
+        {
+          "id": 62,
+          "value": 7590.0
+        },
+        {
+          "id": 63,
+          "value": 20010.0
+        },
+        {
+          "id": 64,
+          "value": 20010.0
+        },
+        {
+          "id": 65,
+          "value": 20010.0
+        },
+        {
+          "id": 66,
+          "value": 20010.0
+        },
+        {
+          "id": 67,
+          "value": 20010.0
+        },
+        {
+          "id": 68,
+          "value": 13.0
+        },
+        {
+          "id": 69,
+          "value": 13.0
+        },
+        {
+          "id": 70,
+          "value": 20010.0
+        },
+        {
+          "id": 71,
+          "value": 20010.0
+        }
+      ],
+      "leftModuleId": 833,
+      "rightModuleId": 698,
+      "data": {
+        "trackLabels": "-01--02--03--04--05--06--07--08-GRP1GRP2",
+        "panLawMono": 1,
+        "panLawStereo": 1,
+        "directOutsMode": 3,
+        "directOutsSkipGroupedTracks": 0,
+        "auxSendsMode": 3,
+        "groupsControlTrackSendLevels": 0,
+        "auxReturnsMutedWhenMainSolo": 0,
+        "auxReturnsSolosMuteDry": 0,
+        "chainMode": 1,
+        "colorAndCloak": 117440512,
+        "symmetricalFade": false,
+        "fadeCvOutsWithVolCv": false,
+        "linkBitMask": 0,
+        "filterPos": 1,
+        "groupedAuxReturnFeedbackProtection": 1,
+        "ecoMode": 65535,
+        "faders": [
+          0.891250908,
+          0.891250908,
+          1.0,
+          0.891250908,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "momentaryCvButtons": 1,
+        "masterFaderScalesSends": 0,
+        "linearVolCvInputs": 0,
+        "id_t0_gainAdjust": 0.870963514,
+        "id_t0_fadeRate": 0.0,
+        "id_t0_fadeProfile": 0.0,
+        "id_t0_directOutsMode": 3,
+        "id_t0_auxSendsMode": 3,
+        "id_t0_panLawStereo": 1,
+        "id_t0_vuColorThemeLocal": 0,
+        "id_t0_filterPos": 1,
+        "id_t0_dispColorLocal": 0,
+        "id_t0_polyStereo": 0,
+        "id_t0_panCvLevel": 1.0,
+        "id_t0_stereoWidth": 1.0,
+        "id_t0_invertInput": 0,
+        "id_t1_gainAdjust": 0.855066657,
+        "id_t1_fadeRate": 0.0,
+        "id_t1_fadeProfile": 0.0,
+        "id_t1_directOutsMode": 3,
+        "id_t1_auxSendsMode": 3,
+        "id_t1_panLawStereo": 1,
+        "id_t1_vuColorThemeLocal": 0,
+        "id_t1_filterPos": 1,
+        "id_t1_dispColorLocal": 0,
+        "id_t1_polyStereo": 0,
+        "id_t1_panCvLevel": 1.0,
+        "id_t1_stereoWidth": 1.0,
+        "id_t1_invertInput": 0,
+        "id_t2_gainAdjust": 1.33659613,
+        "id_t2_fadeRate": 0.0,
+        "id_t2_fadeProfile": 0.0,
+        "id_t2_directOutsMode": 3,
+        "id_t2_auxSendsMode": 3,
+        "id_t2_panLawStereo": 1,
+        "id_t2_vuColorThemeLocal": 0,
+        "id_t2_filterPos": 1,
+        "id_t2_dispColorLocal": 0,
+        "id_t2_polyStereo": 0,
+        "id_t2_panCvLevel": 1.0,
+        "id_t2_stereoWidth": 1.0,
+        "id_t2_invertInput": 0,
+        "id_t3_gainAdjust": 1.0,
+        "id_t3_fadeRate": 0.0,
+        "id_t3_fadeProfile": 0.0,
+        "id_t3_directOutsMode": 3,
+        "id_t3_auxSendsMode": 3,
+        "id_t3_panLawStereo": 1,
+        "id_t3_vuColorThemeLocal": 0,
+        "id_t3_filterPos": 1,
+        "id_t3_dispColorLocal": 0,
+        "id_t3_polyStereo": 0,
+        "id_t3_panCvLevel": 1.0,
+        "id_t3_stereoWidth": 1.0,
+        "id_t3_invertInput": 0,
+        "id_t4_gainAdjust": 1.0,
+        "id_t4_fadeRate": 0.0,
+        "id_t4_fadeProfile": 0.0,
+        "id_t4_directOutsMode": 3,
+        "id_t4_auxSendsMode": 3,
+        "id_t4_panLawStereo": 1,
+        "id_t4_vuColorThemeLocal": 0,
+        "id_t4_filterPos": 1,
+        "id_t4_dispColorLocal": 0,
+        "id_t4_polyStereo": 0,
+        "id_t4_panCvLevel": 1.0,
+        "id_t4_stereoWidth": 1.0,
+        "id_t4_invertInput": 0,
+        "id_t5_gainAdjust": 1.0,
+        "id_t5_fadeRate": 0.0,
+        "id_t5_fadeProfile": 0.0,
+        "id_t5_directOutsMode": 3,
+        "id_t5_auxSendsMode": 3,
+        "id_t5_panLawStereo": 1,
+        "id_t5_vuColorThemeLocal": 0,
+        "id_t5_filterPos": 1,
+        "id_t5_dispColorLocal": 0,
+        "id_t5_polyStereo": 0,
+        "id_t5_panCvLevel": 1.0,
+        "id_t5_stereoWidth": 1.0,
+        "id_t5_invertInput": 0,
+        "id_t6_gainAdjust": 1.0,
+        "id_t6_fadeRate": 0.0,
+        "id_t6_fadeProfile": 0.0,
+        "id_t6_directOutsMode": 3,
+        "id_t6_auxSendsMode": 3,
+        "id_t6_panLawStereo": 1,
+        "id_t6_vuColorThemeLocal": 0,
+        "id_t6_filterPos": 1,
+        "id_t6_dispColorLocal": 0,
+        "id_t6_polyStereo": 0,
+        "id_t6_panCvLevel": 1.0,
+        "id_t6_stereoWidth": 1.0,
+        "id_t6_invertInput": 0,
+        "id_t7_gainAdjust": 1.0,
+        "id_t7_fadeRate": 0.0,
+        "id_t7_fadeProfile": 0.0,
+        "id_t7_directOutsMode": 3,
+        "id_t7_auxSendsMode": 3,
+        "id_t7_panLawStereo": 1,
+        "id_t7_vuColorThemeLocal": 0,
+        "id_t7_filterPos": 1,
+        "id_t7_dispColorLocal": 0,
+        "id_t7_polyStereo": 0,
+        "id_t7_panCvLevel": 1.0,
+        "id_t7_stereoWidth": 1.0,
+        "id_t7_invertInput": 0,
+        "id_g0_fadeRate": 0.0,
+        "id_g0_fadeProfile": 0.0,
+        "id_g0_directOutsMode": 3,
+        "id_g0_auxSendsMode": 3,
+        "id_g0_panLawStereo": 1,
+        "id_g0_vuColorThemeLocal": 0,
+        "id_g0_filterPos": 1,
+        "id_g0_dispColorLocal": 0,
+        "id_g0_panCvLevel": 1.0,
+        "id_g0_stereoWidth": 1.0,
+        "id_g1_fadeRate": 0.0,
+        "id_g1_fadeProfile": 0.0,
+        "id_g1_directOutsMode": 3,
+        "id_g1_auxSendsMode": 3,
+        "id_g1_panLawStereo": 1,
+        "id_g1_vuColorThemeLocal": 0,
+        "id_g1_filterPos": 1,
+        "id_g1_dispColorLocal": 0,
+        "id_g1_panCvLevel": 1.0,
+        "id_g1_stereoWidth": 1.0,
+        "dcBlock": false,
+        "clipping": 0,
+        "fadeRate": 0.0,
+        "fadeProfile": 0.0,
+        "vuColorThemeLocal": 0,
+        "dispColorLocal": 0,
+        "dimGain": 0.251190007,
+        "masterLabel": "MASTER"
+      },
+      "pos": [
+        25,
+        1
+      ]
+    },
+    {
+      "id": 698,
+      "plugin": "MindMeldModular",
+      "version": "1.1.9",
+      "model": "AuxExpanderJr",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.176999956
+        },
+        {
+          "id": 1,
+          "value": 0.166499913
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.157499954
+        },
+        {
+          "id": 5,
+          "value": 0.155999944
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.112500042
+        },
+        {
+          "id": 9,
+          "value": 0.230999917
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.560499728
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        },
+        {
+          "id": 36,
+          "value": 0.0
+        },
+        {
+          "id": 37,
+          "value": 0.0
+        },
+        {
+          "id": 38,
+          "value": 0.0
+        },
+        {
+          "id": 39,
+          "value": 0.0
+        },
+        {
+          "id": 40,
+          "value": 0.0
+        },
+        {
+          "id": 41,
+          "value": 0.0
+        },
+        {
+          "id": 42,
+          "value": 0.0
+        },
+        {
+          "id": 43,
+          "value": 0.0
+        },
+        {
+          "id": 44,
+          "value": 0.0
+        },
+        {
+          "id": 45,
+          "value": 0.0
+        },
+        {
+          "id": 46,
+          "value": 0.0
+        },
+        {
+          "id": 47,
+          "value": 0.0
+        },
+        {
+          "id": 48,
+          "value": 0.0
+        },
+        {
+          "id": 49,
+          "value": 0.0
+        },
+        {
+          "id": 50,
+          "value": 0.0
+        },
+        {
+          "id": 51,
+          "value": 0.0
+        },
+        {
+          "id": 52,
+          "value": 0.0
+        },
+        {
+          "id": 53,
+          "value": 0.0
+        },
+        {
+          "id": 54,
+          "value": 0.0
+        },
+        {
+          "id": 55,
+          "value": 0.0
+        },
+        {
+          "id": 56,
+          "value": 0.0
+        },
+        {
+          "id": 57,
+          "value": 0.0
+        },
+        {
+          "id": 58,
+          "value": 0.0
+        },
+        {
+          "id": 59,
+          "value": 0.0
+        },
+        {
+          "id": 60,
+          "value": 0.0
+        },
+        {
+          "id": 61,
+          "value": 0.0
+        },
+        {
+          "id": 62,
+          "value": 1.0
+        },
+        {
+          "id": 63,
+          "value": 1.0
+        },
+        {
+          "id": 64,
+          "value": 1.0
+        },
+        {
+          "id": 65,
+          "value": 1.0
+        },
+        {
+          "id": 66,
+          "value": 0.586999774
+        },
+        {
+          "id": 67,
+          "value": 0.370999932
+        },
+        {
+          "id": 68,
+          "value": 0.5
+        },
+        {
+          "id": 69,
+          "value": 0.5
+        },
+        {
+          "id": 70,
+          "value": 1.0
+        },
+        {
+          "id": 71,
+          "value": 0.992440462
+        },
+        {
+          "id": 72,
+          "value": 1.0
+        },
+        {
+          "id": 73,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 697,
+      "rightModuleId": 600,
+      "data": {
+        "directOutsModeLocal": 50529027,
+        "panLawStereoLocal": 16843009,
+        "vuColorThemeLocal": 0,
+        "dispColorAuxLocal": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "auxFadeRatesAndProfiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "auxLabels": "RVRBDELYauxCauxD",
+        "id_x0_hpfCutoffFreq": 13.0,
+        "id_x0_lpfCutoffFreq": 20010.0,
+        "id_x0_stereoWidth": 1.0,
+        "id_x1_hpfCutoffFreq": 13.0,
+        "id_x1_lpfCutoffFreq": 20010.0,
+        "id_x1_stereoWidth": 1.0,
+        "id_x2_hpfCutoffFreq": 13.0,
+        "id_x2_lpfCutoffFreq": 20010.0,
+        "id_x2_stereoWidth": 1.0,
+        "id_x3_hpfCutoffFreq": 13.0,
+        "id_x3_lpfCutoffFreq": 20010.0,
+        "id_x3_stereoWidth": 1.0,
+        "panCvLevels": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "pos": [
+        61,
+        1
+      ]
+    },
+    {
+      "id": 700,
+      "plugin": "SubmarineFree",
+      "version": "1.1.6",
+      "model": "TD-202",
+      "params": [],
+      "leftModuleId": 79,
+      "rightModuleId": 599,
+      "data": {
+        "text": "Master Clock",
+        "fg": "#ffa52d",
+        "bg": "#00000000"
+      },
+      "pos": [
+        48,
+        0
+      ]
+    },
+    {
+      "id": 831,
+      "plugin": "VCV-Prototype",
+      "version": "1.3.0",
+      "model": "Prototype",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.159999996
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.625
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 837,
+      "rightModuleId": 79,
+      "data": {
+        "path": "/Users/paulpomeroy/Local Documents/music production/prototypes/tHaT-rHYthM-tHiNG.js",
+        "script": "// tHaT-rHYthM-tHiNG.js © 2020 Paul Pomeroy\n// This work is licensed under a Creative Commons BY-SA\n// (Attribution-ShareAlike) 4.0 International License.\n// See the Creative Commons website for license details.\n\n//PROTOTYPE settings\nconfig.frameDivider = 32;\nconfig.bufferSize = 0;\n\n//variable declarations and inits\n\nlet testing = false;\n\nvar initialized = false;\n\n//track and segment pointers\nconst _trk1=0, _trk2=1;\nconst _seg1=2, _seg2=3, _seg3=4, _seg4=5;\n\nconst _kReps = 0, _kSegment = 3, _kMode = 4;\n// Actual Value, Last Actual Value, Functional Value, Last Functional Value\nvar kRepsA, kRepsLA, kRepsF, kRepsLF;\nvar kSegmentA, kSegmentLA, kSegmentF, kSegmentLF;\n\nvar kModeA, kModeLA, kModeF, kModeLF;\nconst modeText = ['Stopped/Edit OK','Stopped/No Edit','Running/No Edit','Running/Edit OK'];\nvar editAllowed = false;\n\nconst _knobRate = 500, _switchRate = 175;\nvar kProcessCount = 0, sProcessCount = 0; \n\nvar kRepsCount, workingRepsCount; // Rep# knob\n\nconst _outTrack1 = 0;\nconst _outTrack2 = 1;\nconst _outEOC = 5;\n\nconst _inClock = 0;\nconst _inReset = 1;\n\nconst _inputFloor = 4.5;\nconst _inputCeiling = 7.0;\nvar clockIsHigh = false;\nvar resetIsHigh = false;\n\nconst _triggerValue = 10.0;\n\nvar playpositionTrack1, playpositionTrack2;\n\nvar t=true, f=false;\n\nvar TESTPATTERN=[[t,t,t,f,f,f, f,f,f,f,f,f],\n                 [f,f,f,t,f,f, f,f,t,f,t,f]];\n\nvar initPattern=[[t,f,t,f,t,t, f,t,f,t,f,t],\n                 [t,f,t,f,t,t, f,t,f,t,f,t]];\n\nvar livePattern=[];\n\nconst _seqLength = 11; // zero-based\n\nvar segmentColors=[[0.0,0.0,0.6],[0.0,0.6,0.6],[0.6,0.0,0.6],[0.6,0.6,0.0]];\n\nconst displayLines = [];\nconst _l1 = 0, _l2 = 1, l3 = 2;\n\n// ******\n// FUNCTIONS\n// ******\n\nfunction setDisplayLine(l,txt) {\n  displayLines[l] = txt;\n}\n\nfunction buildDisplayLine(l) {\n  let txt = '';\n  switch (l) {\n    case 1:\n      setDisplayLine(0,'Mode: '+modeText[kModeF-1]+' Reps('+kRepsF+')');\n      break;\n    case 2:\n      txt = 'Seg.: ';\n      for (let x=1;x<5;x++) {\n        if (kSegmentF == x) txt += 'oooooo'; else\n          txt += '......';\n        if (x==2) txt += ' ';\n      }\n      setDisplayLine(1,txt);\n      break;\n    case 3:\n      setDisplayLine(2,'');\n      break;\n    default:\n      for (let l=1;l<4;l++) {setDisplayLine(l,'')};\n }\n}\n  \nfunction updateDisplay(reset) {\n  if (reset) {\n    for (let l=0;l<3;l++) {buildDisplayLine(l)}\n  }\n  let txt = displayLines.join('\\n');\n  display(txt);\n}\n\n// -*-*-*\n// Deep-copy a nested array\n// -*-*-*\nconst deepCopy = (src) => {\n  let key,val,copy;\n  if (typeof src !== \"object\" || src === null) return src;\n  copy=Array.isArray(src) ? [] : {};\n  for (key in src) {val=src[key];copy[key]=deepCopy(val);}\n  return copy;\n}\n\n// -*-*-*\n// Change an indicator light\n// -*-*-*\nfunction setIndicatorLight(sw,r,g,b) {\n  block.lights[sw][0] = r;\n  block.lights[sw][1] = g;\n  block.lights[sw][2] = b;\n}\n\n// -*-*-*\n// Advances play positions and returns true if trk 1 is back to start of sequence \n// -*-*-*\nfunction advancePlayPositions() {\n  if (++playpositionTrack2 > _seqLength)\n    playpositionTrack2 = 0;\n  if (++playpositionTrack1 > _seqLength) {\n    playpositionTrack1 = 0;\n  }\n}\n\n// -*-*-*\n// EOC is when playpositionTrack1 is at the end of the sequence AND \n// the end of the requested # of repeats. The EOC trigger is sent \n// after the last step of the cycle is processed and BEFORE the first\n// step of the new cycle. THIS IS ALSO WHERE TRACK 2 GETS SHIFTED AHEAD.\n// -*-*-*\nfunction handleEOC() {\n  if (playpositionTrack1 == _seqLength) { \n    if (kRepsCount == workingRepsCount) { // EOC\n      if (++playpositionTrack2 > _seqLength) // EOC advance for Track 2\n        playpositionTrack2 = 0;\n      block.outputs[_outEOC][0] = _triggerValue;\n      kRepsCount = 1;\n      if (workingRepsCount != kRepsF) {\n        workingRepsCount = kRepsF;\n        resetVariables(); // they changed the reps count\n      }\n    } else\n    ++kRepsCount;\n  }\n}\n\n// -*-*-*\n// Initialize variables and GUI\n// -*-*-*\nfunction guiInit() {\n  \n  kSegmentLF = 1;\n  kSegmentF  = 1;\n  kSegmentLA = 0;\n  kSegmentA  = 0;\n\n  kRepsLF = 2;\n  kRepsF  = 2;\n  kRepsLA = 0.16;\n  kRepsA  = 0.16;\n\n  kModeLF = 3;\n  kModeF  = 3;\n  kModeLA = 0.625;\n  kModeA  = 0.625;\n  \n  setIndicatorLight(_seg1,1.0,1.0,0.0); // segment 1 displayed\n  \n  for (let x=0;x<5;x++) {\n    block.knobs[x] = 0.0;\n  }\n    \n  block.knobs[_kReps] = kRepsA;\n  workingRepsCount = kRepsF;\n  \n  block.knobs[_kMode] = kModeA;\n  \n  livePattern = (testing) ? livePattern=deepCopy(TESTPATTERN) \n                          : livePattern=deepCopy(initPattern);\n  \n  for (let x=0;x<6;x++) {  // Set the lights (switches) for all 4 segments\n    if (livePattern[0][x]) {\n      for (let c=0;c<3;c++) {\n        block.switchLights[x][c] = segmentColors[0][c];\n      }\n    } else {\n      for (let c=0;c<3;c++) {\n        block.switchLights[x][c] = 0.0;\n      }\n    }\n  }\n  \n  resetVariables();\n  \n  updateDisplay(true);\n  initialized = true;\n} // end of guiInit()\n\n// -*-*-*\n// Initialize variables and GUI\n// -*-*-*\nfunction resetVariables() {\n  kRepsCount = 1;\n  playpositionTrack1 = -1;\n  playpositionTrack2 = -1;\n  kProcessCount = 0; \n  sProcessCount = 0; \n  clockIsHigh = false;  \n  resetIsHigh = false;\n}\n\n// ============================================================\n// PROTOTYPE MAIN PROCESS\n// ============================================================\nfunction process(block) {\n  if (!initialized) guiInit();\n  \n// \n// process clock and reset pulses every cycle\n// \n  processInputs: {\n    // ------\n    // Process Reset signal\n    // ------\n    let RESET = block.inputs[_inReset];\n    if (resetIsHigh) {\n      if (RESET < _inputCeiling) \n        resetVariables(); // will set resetIsHigh to false\n    }\n    else { // reset was not high\n      if (RESET > _inputFloor)\n        resetIsHigh = true;\n    }\n    // ------\n    // Process Clock pulse\n    // ------\n    let CLOCK = block.inputs[_inClock];\n    if ((kModeF > 2) && !clockIsHigh && (CLOCK > _inputFloor)) {\n      clockIsHigh = true; // clock pulse turned high\n      \n      advancePlayPositions();\n      \n      sendOutputs: {\n        // Track 1\n        let out = (livePattern[_trk1][playpositionTrack1]) ? _triggerValue : 0;\n        block.outputs[_outTrack1][0] = out;\n        if (out==_triggerValue) \n          setIndicatorLight(_outTrack1,0.0,1.0,1.0);\n        else\n          setIndicatorLight(_outTrack1,0.0,0.0,0.0);\n        // Track 2\n        out = (livePattern[_trk2][playpositionTrack2]) ? _triggerValue : 0;\n        block.outputs[_outTrack2][0] = out;\n        if (out==_triggerValue) \n          setIndicatorLight(_outTrack2,0.0,1.0,1.0);\n        else\n          setIndicatorLight(_outTrack2,0.0,0.0,0.0);\n      }\n      handleEOC(); // will send EOC trigger and bump playpositionTrack2\n    } \n    else   \n    if (clockIsHigh && CLOCK < _inputCeiling) {\n      clockIsHigh = false; // clock pulse turned low\n      block.outputs[_outTrack1][0] = 0;\n      block.outputs[_outTrack2][0] = 0;\n      block.outputs[_outEOC][0] = 0;\n      setIndicatorLight(_outTrack1,0.0,0.0,0.0);\n      setIndicatorLight(_outTrack2,0.0,0.0,0.0);\n    }  \n    // ------\n    // process switch clicks once every _switchRate cycles\n    // ------\n    checkSwitches: if (++sProcessCount > _switchRate) {\n      sProcessCount = 0;\n      for (let s=0;s<6;s++) {\n        let trk, offset;\n        if (block.switches[s]) { // they're pressing this switch\n          if (!editAllowed) {\n            setDisplayLine(2,'You are not in Edit Mode.');\n            updateDisplay(false);\n            break checkSwitches;\n          }\n          if (kSegmentA <= 0.15) {\n            trk = 0; offset=0;\n          } else \n          if (kSegmentA <= 0.3) {\n            trk = 0; offset=6;\n          } else \n          if (kSegmentA <= 0.45) {\n            trk = 1; offset=0;\n          } else {\n            trk = 1; offset=6;\n          }\n          offset += s;\n          livePattern[trk][offset] = !livePattern[trk][offset]; // toggle it\n          if (livePattern[trk][offset]) {\n            for (let c=0;c<3;c++) {\n              block.switchLights[s][c] = segmentColors[kSegmentF-1][c]; // turn it on\n            }\n          } else\n          for (let c=0;c<3;c++) {\n            block.switchLights[s][c] = 0; // turn ot off\n          }\n          sProcessCount -=200; // slow down the next process \n          break checkSwitches; // only one switch pressed at a time\n        }\n      }\n    }\n    // ------\n    // process knob changes once every _knobRate cycles\n    // ------\n    if (++kProcessCount > _knobRate) { \n      kProcessCount = 0;\n\n      kModeA = block.knobs[_kMode];\n      if (kModeA != kModeLA) {\n         kModeLA = kModeA;\n        kModeF = Math.trunc((kModeA) * 4) + 1;\n        kModeF = (kModeF>4) ? 4 : kModeF;\n        editAllowed = (kModeF == 1 || kModeF == 4);\n        if (kModeF != kModeLF) {\n          updateDisplay(true);\n          kModeLF = kModeF;\n        }\n        let r, g;\n        for (let i=2;i<6;i++) {\n          r = 0.0, g = 0.0;\n          if (i-1 <= kModeF) {\n            if (editAllowed) {g=1.0} else {r=1.0}}\n          setIndicatorLight(i,r,g,0.0);\n        }\n      }\n\n      kRepsA = block.knobs[_kReps];\n      if (kRepsA != kRepsLA) {\n         kRepsLA = kRepsA;\n        kRepsF = Math.trunc((kRepsA) * 8) + 1;\n        kRepsF = (kRepsF>8) ? 8 : kRepsF;\n        if (kRepsF != kRepsLF) {\n          updateDisplay(true);\n          kRepsLF = kRepsF;\n        }\n      }\n\n      kSegmentA = block.knobs[_kSegment];\n      if (kSegmentA != kSegmentLA) {\n        let trk, offset; let txt = '';\n        kSegmentLA = kSegmentA;\n        if (kSegmentA <= 0.15) {\n          kSegmentF = 1; trk = 0; offset=0;\n        } else \n        if (kSegmentA <= 0.3) {\n          kSegmentF = 2; trk = 0; offset = 6;\n       } else \n        if (kSegmentA <= 0.45) {\n          kSegmentF = 3; trk = 1; offset = 0;\n        } else {\n          kSegmentF = 4; trk = 1; offset=6;\n        }\n        updateDisplay(true);\n\n        for (let x=2;x<6;x++) {\n          if (x-1<=kSegmentF) \n            setIndicatorLight(x,1.0,1.0,0.0);\n          else \n            setIndicatorLight(x,0.0,0.0,0.0);\n        }\n        if (kSegmentF != kSegmentLF) {\n          for (let x=0;x<6;x++) {  \n            if (livePattern[trk][x+offset]) {\n              for (let c=0;c<3;c++) {\n                block.switchLights[x][c] = segmentColors[kSegmentF-1][c];\n              }\n            } else {\n              for (let c=0;c<3;c++) {\n                block.switchLights[x][c] = 0.0;\n              }\n            }\n          }\n          kSegmentLF = kSegmentF;\n        }\n      }\n    }\n  }\n}"
+      },
+      "pos": [
+        13,
+        0
+      ]
+    },
+    {
+      "id": 833,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsKick",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 835,
+      "rightModuleId": 697,
+      "data": {
+        "sampletype": 6
+      },
+      "pos": [
+        21,
+        1
+      ]
+    },
+    {
+      "id": 834,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsClaps",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 839,
+      "rightModuleId": 835,
+      "data": {
+        "sampletype": 6
+      },
+      "pos": [
+        13,
+        1
+      ]
+    },
+    {
+      "id": 835,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsClaps",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 834,
+      "rightModuleId": 833,
+      "data": {
+        "sampletype": 6
+      },
+      "pos": [
+        17,
+        1
+      ]
+    },
+    {
+      "id": 836,
+      "plugin": "Stoermelder-P1",
+      "version": "1.6.3",
+      "model": "Glue",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 601,
+      "data": {
+        "panelTheme": 1,
+        "defaultSize": 12.0160179,
+        "defaultWidth": 44.9600143,
+        "defaultAngle": 0.0,
+        "defaultOpacity": 1.0,
+        "defaultColor": "#d8d8d8",
+        "defaultFont": 0,
+        "skewLabels": false,
+        "labels": [
+          {
+            "moduleId": 831,
+            "x": 7.2890625,
+            "y": 256.296875,
+            "angle": 0.0,
+            "skew": -1.8075726,
+            "opacity": 1.0,
+            "width": 35.0400085,
+            "size": 14.0160027,
+            "text": "Clock",
+            "color": "#7afcff",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 43.7890625,
+            "y": 256.160156,
+            "angle": 0.0,
+            "skew": -5.49030161,
+            "opacity": 1.0,
+            "width": 35.5200348,
+            "size": 13.9680014,
+            "text": "Reset",
+            "color": "#7afcff",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 8.10546875,
+            "y": 130.90625,
+            "angle": 0.0,
+            "skew": 1.43823338,
+            "opacity": 1.0,
+            "width": 33.2800217,
+            "size": 12.0160236,
+            "text": "Trk 1",
+            "color": "#1ba8b1",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 41.7695312,
+            "y": 130.878906,
+            "angle": 0.0,
+            "skew": -3.07828474,
+            "opacity": 1.0,
+            "width": 33.2800255,
+            "size": 12.0160179,
+            "text": "Trk 2",
+            "color": "#1ba8b1",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 80.3359375,
+            "y": 306.953125,
+            "angle": 0.0,
+            "skew": -0.970445395,
+            "opacity": 1.0,
+            "width": 27.8400307,
+            "size": 12.0160179,
+            "text": "     ",
+            "color": "#000000",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 116.646484,
+            "y": 307.46875,
+            "angle": 0.0,
+            "skew": -3.39830899,
+            "opacity": 1.0,
+            "width": 27.8400288,
+            "size": 12.0160179,
+            "text": "",
+            "color": "#000000",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 151.689453,
+            "y": 306.691406,
+            "angle": 0.0,
+            "skew": -2.63797832,
+            "opacity": 1.0,
+            "width": 27.8400288,
+            "size": 12.0160179,
+            "text": "Prototype",
+            "color": "#000000",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 187.179688,
+            "y": 307.175781,
+            "angle": 0.0,
+            "skew": 4.26825619,
+            "opacity": 1.0,
+            "width": 27.8400288,
+            "size": 12.0160179,
+            "text": "EOC",
+            "color": "#fafafa",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 9.66210938,
+            "y": 307.175781,
+            "angle": 0.0,
+            "skew": -3.32328176,
+            "opacity": 1.0,
+            "width": 28.3200264,
+            "size": 12.0160236,
+            "text": "Trk 1",
+            "color": "#1ba8b1",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 45.0878906,
+            "y": 306.988281,
+            "angle": 0.0,
+            "skew": 0.652647853,
+            "opacity": 1.0,
+            "width": 28.3200264,
+            "size": 12.0160236,
+            "text": "Trk 2",
+            "color": "#1ba8b1",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 113.845703,
+            "y": 163.566406,
+            "angle": 0.0,
+            "skew": 0.796220839,
+            "opacity": 1.0,
+            "width": 32.0000267,
+            "size": 10.9920206,
+            "text": "Segment",
+            "color": "#eedd99",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 153.976562,
+            "y": 163.789062,
+            "angle": 0.0,
+            "skew": 5.06626034,
+            "opacity": 1.0,
+            "width": 21.4400368,
+            "size": 10.9920206,
+            "text": "Mode",
+            "color": "#22ff22",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 87.4140625,
+            "y": 131.0625,
+            "angle": 0.0,
+            "skew": -0.439839214,
+            "opacity": 1.0,
+            "width": 120.160034,
+            "size": 12.0160179,
+            "text": "Segment/Mode",
+            "color": "#e2e2e2",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 43.1367188,
+            "y": 164.722656,
+            "angle": 0.0,
+            "skew": -2.30866671,
+            "opacity": 1.0,
+            "width": 61.5998688,
+            "size": 10.0000277,
+            "text": "",
+            "color": "#e2e2e2",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 186.900391,
+            "y": 164.363281,
+            "angle": 0.0,
+            "skew": 0.998236418,
+            "opacity": 1.0,
+            "width": 20.0,
+            "size": 10.0000277,
+            "text": "",
+            "color": "#e2e2e2",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 87.6386719,
+            "y": 258.375,
+            "angle": 0.0,
+            "skew": 2.07383156,
+            "opacity": 1.0,
+            "width": 124.480118,
+            "size": 10.0000277,
+            "text": "",
+            "color": "#e8e8e8",
+            "font": 0
+          },
+          {
+            "moduleId": 831,
+            "x": 12.4863281,
+            "y": 163.730469,
+            "angle": 0.0,
+            "skew": -0.508811355,
+            "opacity": 1.0,
+            "width": 21.4400368,
+            "size": 10.9920206,
+            "text": "Rep#",
+            "color": "#ff65a3",
+            "font": 0
+          }
+        ]
+      },
+      "pos": [
+        90,
+        0
+      ]
+    },
+    {
+      "id": 837,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": -1.0
+        },
+        {
+          "id": 1,
+          "value": -10.0
+        },
+        {
+          "id": 2,
+          "value": -1.0
+        },
+        {
+          "id": 3,
+          "value": 0.900000095
+        },
+        {
+          "id": 4,
+          "value": 6.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 831,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 839,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsRimClaves",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 834,
+      "data": {
+        "sampletype": 6
+      },
+      "pos": [
+        9,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 1130,
+      "outputModuleId": 602,
+      "outputId": 0,
+      "inputModuleId": 698,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1131,
+      "outputModuleId": 602,
+      "outputId": 1,
+      "inputModuleId": 698,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 1128,
+      "outputModuleId": 604,
+      "outputId": 0,
+      "inputModuleId": 698,
+      "inputId": 2,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1129,
+      "outputModuleId": 604,
+      "outputId": 1,
+      "inputModuleId": 698,
+      "inputId": 3,
+      "color": "#c91847"
+    },
+    {
+      "id": 1126,
+      "outputModuleId": 698,
+      "outputId": 4,
+      "inputModuleId": 602,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 1124,
+      "outputModuleId": 698,
+      "outputId": 1,
+      "inputModuleId": 604,
+      "inputId": 5,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1127,
+      "outputModuleId": 698,
+      "outputId": 5,
+      "inputModuleId": 604,
+      "inputId": 6,
+      "color": "#c91847"
+    },
+    {
+      "id": 1122,
+      "outputModuleId": 697,
+      "outputId": 2,
+      "inputModuleId": 599,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1125,
+      "outputModuleId": 697,
+      "outputId": 3,
+      "inputModuleId": 599,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 1123,
+      "outputModuleId": 698,
+      "outputId": 0,
+      "inputModuleId": 602,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1548,
+      "outputModuleId": 831,
+      "outputId": 0,
+      "inputModuleId": 834,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 1549,
+      "outputModuleId": 831,
+      "outputId": 1,
+      "inputModuleId": 835,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 1551,
+      "outputModuleId": 835,
+      "outputId": 0,
+      "inputModuleId": 697,
+      "inputId": 2,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1550,
+      "outputModuleId": 834,
+      "outputId": 0,
+      "inputModuleId": 697,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 1559,
+      "outputModuleId": 833,
+      "outputId": 0,
+      "inputModuleId": 697,
+      "inputId": 4,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1558,
+      "outputModuleId": 79,
+      "outputId": 2,
+      "inputModuleId": 833,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 1563,
+      "outputModuleId": 79,
+      "outputId": 4,
+      "inputModuleId": 831,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 1557,
+      "outputModuleId": 79,
+      "outputId": 1,
+      "inputModuleId": 831,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 1566,
+      "outputModuleId": 831,
+      "outputId": 0,
+      "inputModuleId": 837,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 1567,
+      "outputModuleId": 831,
+      "outputId": 1,
+      "inputModuleId": 837,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 1570,
+      "outputModuleId": 831,
+      "outputId": 5,
+      "inputModuleId": 839,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 1571,
+      "outputModuleId": 839,
+      "outputId": 0,
+      "inputModuleId": 697,
+      "inputId": 6,
+      "color": "#0c8e15"
+    }
+  ]
+}
