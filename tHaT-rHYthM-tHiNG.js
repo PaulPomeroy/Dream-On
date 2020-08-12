@@ -1,7 +1,6 @@
 // tHaT-rHYthM-tHiNG.js © 2020 Paul Pomeroy
-// This work is licensed under a Creative Commons BY-SA
-// (Attribution-ShareAlike) 4.0 International License.
-// See the Creative Commons website for license details.
+// This work is licensed under a GNU General Public License v3.0 or later License. (https://spdx.org/licenses/GPL-3.0-or-later.html)
+// This code is designed to run in the VCV PROTOTYPE module. (https://vcvrack.com/Prototype#manual) 
 
 //PROTOTYPE settings
 config.frameDivider = 32;
