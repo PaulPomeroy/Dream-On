@@ -428,7 +428,6 @@ function process(block) {
         }
         let t = (kSegmentF < 3) ? _trk1 : _trk2;
         let offset = (!(kSegmentF & 1)) ? 6 : 0;
-//console.log('Segment:'+kSegmentF+', track='+t+', offset='+offset); console.log(livePattern);
         if (kSegmentF != kSegmentLF) {
           for (let x=0;x<6;x++) {
             if (livePattern[t][x+offset]) {
