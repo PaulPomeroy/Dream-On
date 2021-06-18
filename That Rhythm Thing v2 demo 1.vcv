@@ -1,0 +1,1409 @@
+{
+  "version": "1.1.6",
+  "modules": [
+    {
+      "id": 7,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": -1.0
+        },
+        {
+          "id": 1,
+          "value": 1.72999525
+        },
+        {
+          "id": 2,
+          "value": -1.0
+        },
+        {
+          "id": 3,
+          "value": -8.5500021
+        },
+        {
+          "id": 4,
+          "value": 8.05499458
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 952,
+      "rightModuleId": 948,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 599,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 948,
+      "data": {
+        "audio": {
+          "driver": 5,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        66,
+        0
+      ]
+    },
+    {
+      "id": 699,
+      "plugin": "Bogaudio",
+      "version": "1.1.37",
+      "model": "Bogaudio-FMOp",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.333333343
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0105000008
+        },
+        {
+          "id": 3,
+          "value": 0.229229987
+        },
+        {
+          "id": 4,
+          "value": 0.0450000018
+        },
+        {
+          "id": 5,
+          "value": 0.678000033
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.361500055
+        },
+        {
+          "id": 8,
+          "value": 1.0
+        },
+        {
+          "id": 9,
+          "value": 1.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 947,
+      "data": {
+        "linearLevel": false,
+        "antialias_feedback": true,
+        "antialias_depth": true
+      },
+      "pos": [
+        66,
+        1
+      ]
+    },
+    {
+      "id": 934,
+      "plugin": "AS",
+      "version": "1.0.4",
+      "model": "StereoVUmeter",
+      "params": [],
+      "leftModuleId": 935,
+      "rightModuleId": 941,
+      "pos": [
+        38,
+        1
+      ]
+    },
+    {
+      "id": 935,
+      "plugin": "AS",
+      "version": "1.0.4",
+      "model": "StereoVUmeter",
+      "params": [],
+      "leftModuleId": 936,
+      "rightModuleId": 934,
+      "pos": [
+        34,
+        1
+      ]
+    },
+    {
+      "id": 936,
+      "plugin": "AS",
+      "version": "1.0.4",
+      "model": "StereoVUmeter",
+      "params": [],
+      "leftModuleId": 957,
+      "rightModuleId": 935,
+      "pos": [
+        30,
+        1
+      ]
+    },
+    {
+      "id": 937,
+      "plugin": "VCV-Prototype",
+      "version": "1.3.0",
+      "model": "Prototype",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.706500113
+        },
+        {
+          "id": 1,
+          "value": 0.781499147
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.22649993
+        },
+        {
+          "id": 4,
+          "value": 0.602499843
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 954,
+      "rightModuleId": 957,
+      "data": {
+        "path": "/Users/paulpomeroy/That Rhythm Thing v2/tHaT-rHYthM-tHiNG.js",
+        "script": "// tHaT-rHYthM-tHiNG.js – Version 2, © 2021 Paul Pomeroy (R210616a)\n// Licensed: GNU General Public License v3.0 or later License. (https://spdx.org/licenses/GPL-3.0-or-later.html)\n// This code must run in a VCV PROTOTYPE module. (https://vcvrack.com/Prototype#manual) \n\n//PROTOTYPE settings\nconfig.frameDivider = 32;\nconfig.bufferSize = 0;\n\n// ******\n// DECLARATIONS\n// ******\n  var initialized = false;\n\n  //various \"pointers\"\n  const _trk1=0, _trk2=1;\n  const _kTrk1Pattern = 0, _kTrk2Pattern = 1, _kStartPos = 2, _kReps = 3, _kMode = 4, _kSegment = 5;\n\n  //  Actual Value,    Last Actual,     Face Value,     Last Face Value\n  var kTrk1PatternA  , kTrk1PatternLA , kTrk1PatternF , kTrk1PatternLF;\n  var kTrk2PatternA  , kTrk2PatternLA , kTrk2PatternF , kTrk2PatternLF;\n  var kStartPosA     , kStartPosLA    , kStartPosF    , kStartPosLF;\n  var kRepsA         , kRepsLA        , kRepsF        , kRepsLF;\n  var kModeA         , kModeLA        , kModeF        , kModeLF;\n  var kSegmentA      , kSegmentLA     , kSegmentF     , kSegmentLF;\n\n  const modeText = ['*Paused/Edit OK','*Paused/No Edit','Running/No Edit','Running/Edit OK'];\n  const _editDisabledMsg = 'Use K5 to enable Edit Mode.';\n  var editAllowed = false;\n\n  const _knobRate = 500, _switchRate = 175;\n  var kProcessCount, sProcessCount; \n\n  var workingRepsCount; // which pass through cycle we've completed\n\n  var displayTimer = 0;\n\n  const _ledTrack1  = 0;\n  const _ledTrack2  = 1;\n  const _ledStartPos= 2;\n  const _ledReps    = 3;\n  const _ledMode    = 4;\n  const _ledSegment = 5;\n\n  const _outTrack1 = 0;\n  const _outTrack2 = 1;\n  const _outOR     = 2;\n  const _outXOR    = 3;\n  const _outNOR    = 4;\n  const _outEOC    = 5;\n\n  const _inClock = 0;\n  const _inReset = 1;\n\n  const _inputFloor = 4.5;\n  const _inputCeiling = 7.0;\n\n  var clockIsHigh = false;\n  var resetIsHigh = false;\n\n  const _triggerValue = 10.0;\n\n  var t=true, n=false; // in the playback of the Patterns, t issues a trigger, n does not.\n\n  const patternSet=[ // same pattern set used for both tracks\n      [t,n,n,n,n,n, n,n,n,n,n,n,' 1: o----- ------'], // just the first\n      [t,n,n,n,n,n, t,n,n,n,n,n,' 2: o----- o-----'], // on the sixes\n      [t,n,n,n,t,n, n,n,t,n,n,n,' 3: o---o- --o---'], // 4/4 on the 1\n      [t,t,n,n,t,t, n,n,t,t,n,n,' 4: oo--oo --oo--'], // 4/4 on the 1 and 2\n      [t,n,t,n,t,n, t,n,t,n,t,n,' 5: o-o-o- o-o-o-'], // 4/4 on the 1 and 3  \n      [t,t,n,t,t,t, n,t,t,t,n,t,' 6: oo-ooo -ooo-o'], // 4/4 on the 1, 2 and 4\n      [t,n,t,t,t,n, t,t,t,n,t,t,' 7: o-ooo- ooo-oo'], // 4/4 on the 1, 3 and 4\n      [t,t,t,n,t,t, t,n,t,t,t,n,' 8: ooo-oo o-ooo-'], // 4/4 on the 1, 2 and 3\n      [n,t,n,n,n,t, n,n,n,t,n,n,' 9: -o---o ---o--'], // 4/4 on the 2\n      [n,t,n,t,n,t, n,t,n,t,n,t,'10: -o-o-o -o-o-o'], // 4/4 on the 2 and 4\n      [t,n,n,t,n,n, t,n,n,t,n,n,'11: o--o-- o--o--'], // 3/4 on the 1\n      [n,t,n,n,t,n, n,t,n,n,t,n,'12: -o--o- -o--o-'], // 3/4 on the 2\n      [n,n,t,n,n,t, n,n,t,n,n,t,'13: --o--o --o--o'], // 3/4 on the 3\n      [t,t,n,t,t,n, t,t,n,t,t,n,'14: oo-oo- oo-oo-'], // 3/4 on the 1 and 2\n      [t,n,t,t,n,t, t,n,t,t,n,t,'15: o-oo-o o-oo-o'], // 3/4 on the 1 and 3\n      [n,t,t,n,t,t, n,t,t,n,t,t,'16: -oo-oo -oo-oo'], // 3/4 on the 2 and 3\n      [t,n,n,t,t,n, t,n,n,t,t,n,'17: o--oo- o--oo-'], // 3/4 on the 1 then on the 1 and 2\n      [t,n,t,n,t,t, n,t,n,t,n,t,'18: o-o-oo -o-o-o'], // standard bell pattern\n      [n,t,n,t,n,t, n,n,t,n,t,n,'19: -o-o-o --o-o-'], // reversed inverse standard bell\n      [t,n,t,n,t,t, n,t,t,n,t,n,'20: o-o-oo -oo-o-'], // bell pattern 2\n      [t,t,n,t,t,n, t,n,t,t,n,t,'21: oo-oo- o-oo-o'], // bell pattern 3\n      [t,t,t,n,t,t, n,t,n,t,t,n,'22: ooo-oo -o-oo-'], // Reich pattern\n      [n,n,n,t,n,n, t,n,t,n,n,t,'23: ---o-- o-o--o'], // inverse Reich pattern\n      [n,t,t,n,t,n, t,n,n,t,n,t,'24: -oo-o- o--o-o'], // reversed 2nd halves of 22 and 23\n      [t,n,n,n,n,n, n,t,n,n,n,n,'25: o----- -o----'], // on the 1 and 8\n      [t,n,t,n,n,n, n,t,n,t,n,n,'26: o-o--- -o-o--'], // on the 1, 3, 8, 10\n      [n,t,t,n,t,n, t,n,n,n,t,n,'27: -oo-o- o---o-'], // primes (2,3,5,7,11)\n      [t,n,n,t,n,t, n,t,t,t,n,t,'28: o--o-o -ooo-o'], // inverse prime (1,4,6,8,9,10,12)\n      [n,t,n,n,n,t, n,t,n,t,t,n,'29: -o---o -o-oo-'], // reversed primes (2, 6, 8, 10, 11)\n      [n,t,t,t,t,t, t,t,t,t,t,t,'30: -ooooo oooooo']  // every beat but the first\n    ];\n  const _stepsPerPattern = 12 // not zero-based\n  const _patternCount = 30;\n\n  const livePattern=[]; // holds clones of the two selected patterns\n  const _segmentsCount = 4;\n\n  const _repsCount = 12;\n  const _modeCount = 4\n\n  var segmentColors=[[0.0,0.0,0.6],[0.0,0.6,0.6],[0.6,0.6,0.0],[0.6,0.1,0.4]];\n\n  const displayLines = [];\n  const _dl1 = 0, _dl2 = 1, _dl3 = 2;\n  const displayLine3label = \"Trk2 start position \";\n  const displayLine3pad = '             ';\n\n  var playPositionTrack1, playPositionTrack2 = 1; // (min=1; max=12)\n  var startPositionLockedTrack2 = false;\n  var startPositionTrack2 = 1;\n  const startPositionSymbolTrack2 = ['x','^'];\n\n// ******\n// FUNCTIONS\n// ******\n\nfunction setDisplayLine(l,txt) {\n  displayLines[l] = txt;\n}\n\nfunction buildDisplayLine(l) {\n  let txt = '';\n  switch (l) {\n    case _dl1:\n      setDisplayLine(_dl1,'Mode: '+modeText[kModeF-1] + ' | Reps: '+ kRepsF);\n      break;\n      \n    case _dl2:\n      let x, b = 0;\n      let beats = [];\n      let beat = [[\"o\",\".\"],[\"O\",\"-\"]];\n      \n      let d = (kSegmentF == 1) ? 1 : 0;\n      for (x=0;x<6;x++) {\n        beats[b++] = (livePattern[_trk1][x]) ? beat[d][0] : beat[d][1];\n      }\n      beats[b++] = ' ';\n      d = (kSegmentF == 2) ? 1 : 0;\n      for (x=6;x<12;x++) {\n        beats[b++] = (livePattern[_trk1][x]) ? beat[d][0] : beat[d][1];\n      }\n      beats[b++] = '|';\n      d = (kSegmentF == 3) ? 1 : 0;\n      for (x=0;x<6;x++) {\n        beats[b++] = (livePattern[_trk2][x]) ? beat[d][0] : beat[d][1];\n      }\n      beats[b++] = ' ';\n      d = (kSegmentF == 4) ? 1 : 0;\n      for (x=6;x<12;x++) {\n        beats[b++] = (livePattern[_trk2][x]) ? beat[d][0] : beat[d][1];\n      }\n      beats[b++] = ' ';\n      txt = 'Seg.: ' + beats.join(''); \n      setDisplayLine(_dl2,txt);\n      break;\n      \n    case _dl3:\n      txt = displayLine3label; \n      let sym = (startPositionLockedTrack2) ? 0 : 1;\n      sym = displayLine3pad + startPositionSymbolTrack2[sym];\n      if (startPositionTrack2 < 7) \n        txt = txt + sym.slice(-(startPositionTrack2));\n      else // there's a space between steps 6 and 7 so move symbol position ...\n        txt = txt + sym.slice(-(startPositionTrack2+1)); // ... one space to the right      \n      setDisplayLine(_dl3,txt);\n      break;\n      \n    default:\n      for (let l=1;l<4;l++) {setDisplayLine(l,'')};\n }\n}\n  \nfunction updateDisplay(reset) {\n  if (reset) {\n    for (let l=0;l<3;l++) {buildDisplayLine(l)}\n  }\n  let txt = displayLines.join('\\n');\n  display(txt);\n}\n\n// -*-*-*\n// Change an indicator light\n// -*-*-*\nfunction setIndicatorLight(light,r,g,b) {\n  block.lights[light][0] = r;\n  block.lights[light][1] = g;\n  block.lights[light][2] = b;\n}\n\n// -*-*-*\n// Advances play positions \n// -*-*-*\nfunction advancePlayPositions() {\n  if (++playPositionTrack1 > _stepsPerPattern) {\n    handleEOC();\n    playPositionTrack1 = 1;\n  }\n  if (++playPositionTrack2 > _stepsPerPattern)\n    playPositionTrack2 = 1;\n}\n\n// -*-*-*\n// EOC is when playPositionTrack1 is at the end of the sequence AND \n// the end of the requested # of repeats. The EOC trigger is sent \n// after the last step of the cycle is processed and BEFORE the first\n// step of the new cycle. THIS IS ALSO WHERE TRACK 2 GETS SHIFTED AHEAD.\n// -*-*-*\nfunction handleEOC() {\n  if (playPositionTrack1 > _stepsPerPattern) {\n    if (++workingRepsCount >= kRepsF) { // EOC\n      workingRepsCount = 0;\n      if (!startPositionLockedTrack2) {\n        if (++startPositionTrack2 > _stepsPerPattern) // EOC advance for Track 2 start position\n          startPositionTrack2 = 1;\n      }\n      playPositionTrack2 = startPositionTrack2 - 1; // will be advanced before played again\n        \n      block.outputs[_outEOC][0] = _triggerValue; // Send EOC Trigger\n      if (kRepsLF != kRepsF) {\n        resetVariables(); // they changed the reps count\n      }\n      buildDisplayLine(_dl3);\n      if (displayTimer < 250) updateDisplay(false);\n    } \n  }\n}\n\nfunction loadPattern(t,p) {\n  livePattern[t] = [].concat(patternSet[p]); // this CLONES the original array for the pattern\n  \nconsole.log('*** That-Rhythm-Thing : Pattern for Track '+ t+1 +' set to: ' + livePattern[t][12]);\n  \n  setDisplayLine(_dl3,'Trk ' + (t+1) + '-> Ptrn ' + livePattern[t][12]);\n  displayTimer = Date.now() + 4000;\n  buildDisplayLine(_dl2); \n  updateDisplay(false);\n  if (t==_trk1 && kSegmentF > 2) return;\n  if (t==_trk2 && kSegmentF < 3) return;\n  let offset = (!(kSegmentF & 1)) ? 6 : 0;\n  for (let x=0;x<6;x++) {\n    if (livePattern[t][x+offset]) {\n      for (let c=0;c<3;c++) {\n        block.switchLights[x][c] = segmentColors[(kSegmentF-1)][c];\n      }\n    } else {\n      for (let c=0;c<3;c++) {\n        block.switchLights[x][c] = 0.0;\n      }\n    }\n  }\n}\n\n// -*-*-*\n// Initialize variables and GUI\n// -*-*-*\nfunction guiInit() {\n  // ----------------\n  // Set some knob values if the script was just loaded into a new module instance\n  // (Assumes that if all knobs are 0.5 then this is a new module.)\n  // ----------------\n  newInit: {\n    let newInstance = true;\n    test: for (let i=0;i<6;i++) {\n      if (block.knobs[i] != 0.5) {\n        newInstance = false;\n        break test;\n      }\n    }\n    if (newInstance) {\n      block.knobs[_kTrk1Pattern] = 0.08; // pattern 3\n      block.knobs[_kTrk2Pattern] = 0.08; // pattern 3\n      block.knobs[_kStartPos] = 0.0 // track 2 position not fixed\n      block.knobs[_kReps] = 0.22; // 2 reps per cycle\n      block.knobs[_kSegment] = 0.1; // display segment 1\n    }\n  }\n  \n  // ----------------\n  // Normal initialization\n  // ----------------  \n  kTrk1PatternA  = block.knobs[_kTrk1Pattern];\n  kTrk1PatternLA = 99; // force sync with actual value\n  kTrk1PatternF  = 1;\n  kTrk1PatternLF = 1;\n  livePattern[_trk1] = [].concat(patternSet[1]);\n   \n  kTrk2PatternA  = block.knobs[_kTrk2Pattern];\n  kTrk2PatternLA = 99; // force sync with actual value\n  kTrk2PatternF  = 1;\n  kTrk2PatternLF = 1;\n  livePattern[_trk2] = [].concat(patternSet[1]); \n\n  kStartPosA  = block.knobs[_kStartPos]; \n  kStartPosLA = 99; // force sync with actual value\n  kStartPosF  = Math.trunc((kStartPosA) * _stepsPerPattern) + 1;\n  kStartPosF = (kStartPosF>_stepsPerPattern) ? _stepsPerPattern : kStartPosF;\n  kStartPosLF = 99; // force sync with actual value\n\n  kSegmentA  = block.knobs[_kSegment];\n  kSegmentLA = 99; // force sync with actual value\n  kSegmentF  = 1;\n  kSegmentLF = 99; // force sync with actual value\n\n  kRepsA  = block.knobs[_kReps];\n  kRepsLA = 99; // force sync with actual value\n  kRepsLF = 0;\n  kRepsF = Math.trunc((kRepsA) * _repsCount) + 1;\n  kRepsF = (kRepsF>_repsCount) ? _repsCount : kRepsF;\n\n  kModeA  = block.knobs[_kMode]; \n  kModeLA = 99; // force sync with actual value\n  kModeF  = 3;\n  kModeLF = 99; // force sync with actual value\n  \n  resetVariables();\n  \n  sProcessCount = _switchRate + 1; // force immediate sync with actual values of switches\n  kProcessCount = _knobRate + 1; // force immediate sync with actual values of knobs \n\n  setIndicatorLight(_ledStartPos,0,0.9,0);\n  setIndicatorLight(_ledReps,0,0.9,0); \n\n  initialized = true;\n} // end of guiInit()\n\n// -*-*-*\n// Reinitialize variables and GUI\n// -*-*-*\nfunction resetVariables() {\n  workingRepsCount = 0; // haven't played through pattern yet\n  playPositionTrack1 = 0; // will be advanced to 1 before played again\n  if (!startPositionLockedTrack2) {\n    playPositionTrack2 = 0; // will be advanced to 1 before played again\n    startPositionTrack2 = 1;\n  }\n  else {\n    startPositionTrack2 = kStartPosF; // NOT zero-based\n    playPositionTrack2 = startPositionTrack2 - 1; // will be advanced before played again\n  }\n  kProcessCount = 0; \n  sProcessCount = 0; \n  \n  clockIsHigh = false;  \n  resetIsHigh = false;\n  \n  block.outputs[_outTrack1][0] = 0;\n  block.outputs[_outTrack2][0] = 0;\n  block.outputs[_outOR][0] = 0;\n  block.outputs[_outXOR][0] = 0;\n  block.outputs[_outNOR][0] = 0;\n  \n  setIndicatorLight(_ledTrack1,0.0,0.0,0.0);\n  setIndicatorLight(_ledTrack2,0.0,0.0,0.0);\n\n  updateDisplay(true);\n}\n\n// ************************************************************\n// VCV PROTOTYPE MAIN PROCESS\n// ************************************************************\nfunction process(block) {\n  if (!initialized) guiInit();\n// \n// process clock and reset pulses every cycle\n// \n  processInputs: {\n    // ------\n    // Process Reset signal\n    // ------\n    let RESET = block.inputs[_inReset];\n    if (resetIsHigh) {\n      if (RESET < _inputCeiling) \n        resetVariables(); // will set resetIsHigh to false\n    }\n    else { // reset was not high\n      if (RESET > _inputFloor)\n        resetIsHigh = true; // reset will occur on next cycle\n    }\n    // ------\n    // Process Clock pulse\n    // ------\n    let CLOCK = block.inputs[_inClock];\n    if ((kModeF > 2) && !clockIsHigh && (CLOCK > _inputFloor)) {\n      clockIsHigh = true; // clock pulse turned high\n      \n      advancePlayPositions();\n      \n      sendOutputs: {\n        // Track 1 \n        let out1 = (livePattern[_trk1][playPositionTrack1-1]) ? _triggerValue : 0;\n        block.outputs[_outTrack1][0] = out1;\n        if (out1==_triggerValue) \n          setIndicatorLight(_outTrack1,0.0,1.0,1.0);\n        else\n          setIndicatorLight(_outTrack1,0.0,0.0,0.0);\n        \n        // Track 2\n        let out2 = (livePattern[_trk2][playPositionTrack2-1]) ? _triggerValue : 0;\n        block.outputs[_outTrack2][0] = out2;\n        if (out2==_triggerValue) \n          setIndicatorLight(_outTrack2,0.0,1.0,1.0);\n        else\n          setIndicatorLight(_outTrack2,0.0,0.0,0.0);\n\n        //\n        // Logical combinations of Tracks 1 and 2\n        //\n        let trackOuts = out1 + out2;\n        \n        // Track 1 NOR Track 2\n        if (trackOuts == 0) { // neither fired\n          block.outputs[_outNOR][0] = _triggerValue;\n          block.outputs[_outOR][0] = 0;\n          block.outputs[_outXOR][0] = 0;\n        } \n        else { // at leat one fired\n          block.outputs[_outNOR][0] = 0;\n          // Track 1 OR Track 2\n          if (trackOuts > 0) // one or both fired\n            block.outputs[_outOR][0] = _triggerValue;\n           // Track 1 XOR Track 2\n          if (trackOuts == _triggerValue) // just one fired\n            block.outputs[_outXOR][0] = _triggerValue;\n        }\n      }\n    } \n    else   \n    if (clockIsHigh && CLOCK < _inputCeiling) {\n      clockIsHigh = false; // clock pulse turned low\n      block.outputs[_outTrack1][0] = 0;\n      block.outputs[_outTrack2][0] = 0;\n      block.outputs[_outOR][0] = 0;\n      block.outputs[_outXOR][0] = 0;\n      block.outputs[_outNOR][0] = 0; // _triggerValue; <== ????\n      block.outputs[_outEOC][0] = 0;\n      setIndicatorLight(_outTrack1,0.0,0.0,0.0);\n      setIndicatorLight(_outTrack2,0.0,0.0,0.0);\n    }\n    // ------\n    // process switch clicks once every _switchRate cycles\n    // ------\n    checkSwitches: if (++sProcessCount > _switchRate) {\n      sProcessCount = 0;\n      for (let s=0;s<6;s++) {\n        let trk = (kSegmentF < 3) ? _trk1 : _trk2;\n        let offset = (!(kSegmentF & 1)) ? 6 : 0;\n        if (block.switches[s]) { // they're pressing this switch\n          if (!editAllowed) {\n            setDisplayLine(_dl3,_editDisabledMsg);\n            displayTimer = Date.now() + 3000;\n            updateDisplay(false);\n            break checkSwitches;\n          }\n          offset += s;\n          livePattern[trk][offset] = !livePattern[trk][offset]; // toggle it\n          if (livePattern[trk][offset]) {\n            for (let c=0;c<3;c++) {\n              block.switchLights[s][c] = segmentColors[kSegmentF-1][c]; // turn it on\n            }\n          } else\n          for (let c=0;c<3;c++) {\n            block.switchLights[s][c] = 0; // turn ot off\n          }\n          buildDisplayLine(_dl2);\n          updateDisplay(false);\n          sProcessCount -=125; // slow down the next process \n          break checkSwitches; // only one switch pressed at a time\n        }\n      }\n    }\n    // ------\n    // process knob changes once every _knobRate cycles\n    // ------\n    if (++kProcessCount > _knobRate) { \n      kProcessCount = 0; // reset counter             \n      //\n      // First, clear temporary Display Line 3 messages if timed out\n      //\n      if (displayTimer > 0) {\n        if ((Date.now() - displayTimer) > 0) {\n          displayTimer = 0;\n          buildDisplayLine(_dl3);\n          updateDisplay(false);\n        }\n      }\n      //\n      // TRACK 1 Pattern\n      //\n      kTrk1PatternA = block.knobs[_kTrk1Pattern];\n      if (kTrk1PatternA != kTrk1PatternLA) {\n        kTrk1PatternLA = kTrk1PatternA;\n        kTrk1PatternF = Math.trunc((kTrk1PatternA) * _patternCount) + 1;\n        kTrk1PatternF = (kTrk1PatternF>_patternCount) ? _patternCount : kTrk1PatternF;\n        if (kTrk1PatternF != kTrk1PatternLF) {\n          loadPattern(_trk1,(kTrk1PatternF-1));\n          kTrk1PatternLF = kTrk1PatternF;\n        }\n      }\n      //\n      // TRACK 2 Pattern\n      //\n      kTrk2PatternA = block.knobs[_kTrk2Pattern];\n      if (kTrk2PatternA != kTrk2PatternLA) {\n        kTrk2PatternLA = kTrk2PatternA;\n        kTrk2PatternF = Math.trunc((kTrk2PatternA) * _patternCount) + 1;\n        kTrk2PatternF = (kTrk2PatternF>_patternCount) ? _patternCount : kTrk2PatternF;\n        if (kTrk2PatternF != kTrk2PatternLF) {\n          loadPattern(_trk2,(kTrk2PatternF-1));\n          kTrk2PatternLF = kTrk2PatternF;\n        }\n      }\n      //\n      // Fixed Position for Track 2\n      //\n      kStartPosA = block.knobs[_kStartPos];\n      if (kStartPosA != kStartPosLA) {\n        kStartPosLA = kStartPosA;\n        kStartPosF = Math.trunc((kStartPosA) * _stepsPerPattern);\n        kStartPosF = (kStartPosF > _stepsPerPattern) ? _stepsPerPattern : kStartPosF; // 0-12; 0 = not locked\n        if (kStartPosF > 0) {\n          startPositionLockedTrack2 = true;\n          startPositionTrack2 = kStartPosF;\n          setIndicatorLight(_ledStartPos,0.9,0,0); // red\n          setIndicatorLight(_ledReps,0.9,0.7,0); // yellow\n        }\n        else {\n          startPositionLockedTrack2 = false;\n          // let startPositionTrack2 stay where it is\n          setIndicatorLight(_ledStartPos,0,0.9,0); // green\n          setIndicatorLight(_ledReps,0,0.9,0); // green\n        }\n        if (kStartPosF != kStartPosLF) {\n          kStartPosLF = kStartPosF;\n          buildDisplayLine(_dl3);\n          updateDisplay(false);\n        }\n      }\n      //\n      // Run/Edit MODE\n      //\n      kModeA = block.knobs[_kMode];\n      if (kModeA != kModeLA) {\n        kModeLA = kModeA;\n        kModeF = Math.trunc((kModeA) * _modeCount) + 1;\n        kModeF = (kModeF>4) ? _modeCount : kModeF;\n        editAllowed = (kModeF == 1 || kModeF == _modeCount);\n        \n        if (kModeF != kModeLF) {\n          kModeLF = kModeF;\n          let r, g, b;\n          switch(kModeF) {\n            case 1:\n              r = 0.7; g = 0.7; b = 0.0;\n              break;\n            case 2:  \n              r = 1.0; g = 0.0; b = 0.0;\n              break;\n            case 3:  \n              r = 0.0; g = 1.0; b = 0.0;\n              break;\n            case 4:  \n              r = 0.0; g = 0.7; b = 0.7;\n              break;\n            default:  \n              r = 0.0; g = 0.0; b = 0.0;\n          }\n          setIndicatorLight(_ledMode,r,g,b);\n          updateDisplay(true);\n        }\n      }\n      //\n      // REPETITION COUNT (# of iterations for each cycle)\n      //\n      kRepsA = block.knobs[_kReps];\n      if (kRepsA != kRepsLA) {\n        kRepsF = Math.trunc((kRepsA) * _repsCount) + 1;\n        kRepsF = (kRepsF > _repsCount) ? _repsCount : kRepsF;\n        kRepsLA = kRepsA;\n      }\n      if (kRepsF != kRepsLF) {\n        updateDisplay(true);\n        kRepsLF = kRepsF;\n      }\n      //\n      // SEGMENT SELECT (to load swtiches so user can edit a pattern segment)\n      //\n      kSegmentA = block.knobs[_kSegment];\n      if (kSegmentA != kSegmentLA) {\n        kSegmentF = Math.trunc((kSegmentA) * _segmentsCount) + 1;\n        kSegmentF = (kSegmentF>_segmentsCount) ? _segmentsCount : kSegmentF;\n        kSegmentLA = kSegmentA;\n        updateDisplay(true);\n\n        let trk = (kSegmentF < 3) ? _trk1 : _trk2;\n        let offset = (!(kSegmentF & 1)) ? 6 : 0;\n        if (kSegmentF != kSegmentLF) {\n          let s = kSegmentF-1;\n          setIndicatorLight(_ledSegment,segmentColors[s][0],segmentColors[s][1],segmentColors[s][2]);\n          for (let x=0;x<6;x++) {\n            if (livePattern[trk][x+offset]) {\n              for (let c=0;c<3;c++) {\n                block.switchLights[x][c] = segmentColors[s][c];\n              }\n            } else {\n              for (let c=0;c<3;c++) {\n                block.switchLights[x][c] = 0.0;\n              }\n            }\n          }\n          kSegmentLF = kSegmentF;\n        }\n      } // end of: if (kSegmentA != kSegmentLA) ...\n      \n    } // end of: if (++kProcessCount > _knobRate) ...\n  } // end of: processInputs ...\n} // end of function process(block) ..."
+      },
+      "pos": [
+        14,
+        1
+      ]
+    },
+    {
+      "id": 938,
+      "plugin": "Stoermelder-P1",
+      "version": "1.9.0",
+      "model": "Glue",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 939,
+      "rightModuleId": 954,
+      "data": {
+        "panelTheme": 1,
+        "defaultSize": 16.0,
+        "defaultWidth": 100.000015,
+        "defaultAngle": 0.0,
+        "defaultOpacity": 1.0,
+        "defaultColor": "#dcff46",
+        "defaultFont": 0,
+        "defaultFontColor": "#080808",
+        "skewLabels": false,
+        "labels": [
+          {
+            "moduleId": 937,
+            "x": 4.390625,
+            "y": 300.734375,
+            "angle": 0.0,
+            "skew": 2.80951858,
+            "opacity": 1.0,
+            "width": 39.0400238,
+            "size": 13.9680014,
+            "text": "Trk 1",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 40.9199219,
+            "y": 301.617188,
+            "angle": 0.0,
+            "skew": -0.73621881,
+            "opacity": 1.0,
+            "width": 39.0400238,
+            "size": 14.0000029,
+            "text": "Trk 2",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 80.5039062,
+            "y": 301.734375,
+            "angle": 0.0,
+            "skew": -0.771628201,
+            "opacity": 1.0,
+            "width": 29.600029,
+            "size": 14.0000029,
+            "text": "OR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 116.011719,
+            "y": 301.734375,
+            "angle": 0.0,
+            "skew": -1.80468917,
+            "opacity": 1.0,
+            "width": 29.600029,
+            "size": 14.0000029,
+            "text": "XOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 151.197266,
+            "y": 301.738281,
+            "angle": 0.0,
+            "skew": 1.07669485,
+            "opacity": 1.0,
+            "width": 29.600029,
+            "size": 14.0000029,
+            "text": "NOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 186.380859,
+            "y": 301.734375,
+            "angle": 0.0,
+            "skew": -2.45674872,
+            "opacity": 1.0,
+            "width": 29.600029,
+            "size": 14.0000029,
+            "text": "EOC",
+            "color": "#fafafa",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 3.97412872,
+            "y": 256.008179,
+            "angle": 0.0,
+            "skew": 2.96244669,
+            "opacity": 1.0,
+            "width": 39.0400238,
+            "size": 13.9680014,
+            "text": "Clock",
+            "color": "#ff7455",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 42.6777344,
+            "y": 256.007812,
+            "angle": 0.0,
+            "skew": -1.66672504,
+            "opacity": 1.0,
+            "width": 39.0400238,
+            "size": 13.9680014,
+            "text": "Reset",
+            "color": "#ff7455",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 9.71679688,
+            "y": 161.886719,
+            "angle": 0.0,
+            "skew": 2.66836786,
+            "opacity": 1.0,
+            "width": 32.1600304,
+            "size": 10.9760056,
+            "text": "Ptrn 1",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 42.0800781,
+            "y": 161.882812,
+            "angle": 0.0,
+            "skew": -0.334081531,
+            "opacity": 1.0,
+            "width": 32.1600304,
+            "size": 11.0400019,
+            "text": "Ptrn 2",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 114.396484,
+            "y": 162.886719,
+            "angle": 0.0,
+            "skew": -1.12263238,
+            "opacity": 1.0,
+            "width": 32.0000229,
+            "size": 10.9919996,
+            "text": "Reps",
+            "color": "#fafafa",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 145.597656,
+            "y": 162.886719,
+            "angle": 0.0,
+            "skew": -4.45257568,
+            "opacity": 1.0,
+            "width": 43.8400192,
+            "size": 11.9679995,
+            "text": "Run/Edit",
+            "color": "#ff65a3",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 189.582031,
+            "y": 162.886719,
+            "angle": 0.0,
+            "skew": 2.62811542,
+            "opacity": 1.0,
+            "width": 26.7200336,
+            "size": 11.9679995,
+            "text": "Seg",
+            "color": "#ff65a3",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 937,
+            "x": 74.7792969,
+            "y": 162.074219,
+            "angle": 0.0,
+            "skew": -2.33621073,
+            "opacity": 1.0,
+            "width": 40.0000229,
+            "size": 11.0400019,
+            "text": "T2StPos",
+            "color": "#1ba8b1",
+            "font": 0,
+            "fontColor": "#f8f8f8"
+          },
+          {
+            "moduleId": 936,
+            "x": 6.890625,
+            "y": 42.9179688,
+            "angle": 0.0,
+            "skew": -2.05542707,
+            "opacity": 1.0,
+            "width": 46.2400131,
+            "size": 11.0080004,
+            "text": "Trk1 Trk2",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 935,
+            "x": 9.765625,
+            "y": 41.9296875,
+            "angle": 0.0,
+            "skew": 4.50925016,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 10.9920053,
+            "text": "OR  XOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 934,
+            "x": 9.07421875,
+            "y": 41.4882812,
+            "angle": 0.0,
+            "skew": 0.43261838,
+            "opacity": 1.0,
+            "width": 21.2800446,
+            "size": 10.9920053,
+            "text": "NOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 934,
+            "x": 29.2578125,
+            "y": 41.4882812,
+            "angle": 0.0,
+            "skew": 2.81245589,
+            "opacity": 1.0,
+            "width": 21.9200459,
+            "size": 10.8480062,
+            "text": "EOC",
+            "color": "#fafafa",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 942,
+            "x": 9.45117188,
+            "y": 45.2539062,
+            "angle": 0.0,
+            "skew": 6.98557615,
+            "opacity": 1.0,
+            "width": 41.6000061,
+            "size": 13.4079971,
+            "text": "Track 1",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 943,
+            "x": 8.82226562,
+            "y": 44.7890625,
+            "angle": 0.0,
+            "skew": 0.252829254,
+            "opacity": 1.0,
+            "width": 41.6000061,
+            "size": 13.4079971,
+            "text": "Track 2",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 944,
+            "x": 11.2402344,
+            "y": 46.875,
+            "angle": 0.0,
+            "skew": -2.06954455,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 10.9920053,
+            "text": "OR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 950,
+            "x": 10.21875,
+            "y": 46.875,
+            "angle": 0.0,
+            "skew": 3.58974266,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 10.9920053,
+            "text": "XOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 947,
+            "x": 10.0742188,
+            "y": 46.8789062,
+            "angle": 0.0,
+            "skew": -0.191809788,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 10.9920053,
+            "text": "NOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 941,
+            "x": 7.92773438,
+            "y": 30.2890625,
+            "angle": 0.0,
+            "skew": -1.78757679,
+            "opacity": 1.0,
+            "width": 43.6800079,
+            "size": 15.04,
+            "text": "Main",
+            "color": "#000000",
+            "font": 0,
+            "fontColor": "#f8f8f8"
+          },
+          {
+            "moduleId": 941,
+            "x": 8.06640625,
+            "y": 44.8554688,
+            "angle": 0.0,
+            "skew": 4.42896461,
+            "opacity": 1.0,
+            "width": 43.6800079,
+            "size": 15.04,
+            "text": "Clock",
+            "color": "#000000",
+            "font": 0,
+            "fontColor": "#f8f8f8"
+          },
+          {
+            "moduleId": 7,
+            "x": 67.0996094,
+            "y": 65.9726562,
+            "angle": 0.0,
+            "skew": 0.0321786404,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 10.9920053,
+            "text": "Track 1",
+            "color": "#7accff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 7,
+            "x": 67.9765625,
+            "y": 144.3125,
+            "angle": 0.0,
+            "skew": 0.184221327,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 10.9920053,
+            "text": "Track 2",
+            "color": "#ff65a3",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 699,
+            "x": 57.5605469,
+            "y": 23.1289062,
+            "angle": 0.0,
+            "skew": -1.91272783,
+            "opacity": 1.0,
+            "width": 36.4800415,
+            "size": 16.4960041,
+            "text": "EOC",
+            "color": "#fafafa",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 948,
+            "x": 50.3222656,
+            "y": 21.5507812,
+            "angle": 0.0,
+            "skew": 2.36170101,
+            "opacity": 1.0,
+            "width": 41.6000061,
+            "size": 13.0240002,
+            "text": "Track 1",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 948,
+            "x": 94.5234375,
+            "y": 21.546875,
+            "angle": 0.0,
+            "skew": -1.04621279,
+            "opacity": 1.0,
+            "width": 41.6000061,
+            "size": 13.0239992,
+            "text": "Track 2",
+            "color": "#dcff46",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 948,
+            "x": 140.443359,
+            "y": 21.8359375,
+            "angle": 0.0,
+            "skew": -4.72614717,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 12.9760036,
+            "text": "OR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 948,
+            "x": 182.800781,
+            "y": 21.8359375,
+            "angle": 0.0,
+            "skew": -0.226291478,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 13.0239992,
+            "text": "XOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 948,
+            "x": 226.080078,
+            "y": 21.8359375,
+            "angle": 0.0,
+            "skew": 1.19663906,
+            "opacity": 1.0,
+            "width": 40.0000381,
+            "size": 12.9920025,
+            "text": "NOR",
+            "color": "#7afcff",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 948,
+            "x": 274.712891,
+            "y": 21.90625,
+            "angle": 0.0,
+            "skew": 1.76047802,
+            "opacity": 1.0,
+            "width": 29.1200447,
+            "size": 13.008007,
+            "text": "EOC",
+            "color": "#fafafa",
+            "font": 0,
+            "fontColor": "#080808"
+          },
+          {
+            "moduleId": 948,
+            "x": 3.2421875,
+            "y": 22.5742188,
+            "angle": 0.0,
+            "skew": 7.11188841,
+            "opacity": 1.0,
+            "width": 43.6800079,
+            "size": 13.0240002,
+            "text": "Kick",
+            "color": "#000000",
+            "font": 0,
+            "fontColor": "#f8f8f8"
+          }
+        ]
+      },
+      "pos": [
+        10,
+        1
+      ]
+    },
+    {
+      "id": 939,
+      "plugin": "ImpromptuModular",
+      "version": "1.1.10",
+      "model": "Clocked-Clkd",
+      "params": [
+        {
+          "id": 0,
+          "value": 5.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 90.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 938,
+      "data": {
+        "panelTheme": 1,
+        "running": false,
+        "bpmDetectionMode": false,
+        "resetOnStartStop": 5,
+        "ppqn": 4,
+        "resetClockOutputsHigh": false,
+        "momentaryRunInput": true,
+        "displayIndex": 1,
+        "trigOuts": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "clockMaster": -1
+      },
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 941,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsKick",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 934,
+      "rightModuleId": 942,
+      "data": {
+        "sampletype": 5
+      },
+      "pos": [
+        42,
+        1
+      ]
+    },
+    {
+      "id": 942,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsSnare",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 941,
+      "rightModuleId": 943,
+      "data": {
+        "sampletype": 8
+      },
+      "pos": [
+        46,
+        1
+      ]
+    },
+    {
+      "id": 943,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsSnare",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 942,
+      "rightModuleId": 944,
+      "data": {
+        "sampletype": 4
+      },
+      "pos": [
+        50,
+        1
+      ]
+    },
+    {
+      "id": 944,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsHiHatClosed",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 943,
+      "rightModuleId": 950,
+      "data": {
+        "sampletype": 8
+      },
+      "pos": [
+        54,
+        1
+      ]
+    },
+    {
+      "id": 947,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsClaps",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 950,
+      "rightModuleId": 699,
+      "data": {
+        "sampletype": 7
+      },
+      "pos": [
+        62,
+        1
+      ]
+    },
+    {
+      "id": 948,
+      "plugin": "Bogaudio",
+      "version": "1.1.37",
+      "model": "Bogaudio-Mix8",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.909090936
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.775591016
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": -1.0
+        },
+        {
+          "id": 6,
+          "value": 0.882090747
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 1.0
+        },
+        {
+          "id": 9,
+          "value": 0.748591125
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.572999418
+        },
+        {
+          "id": 12,
+          "value": 0.783090949
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": -0.589000046
+        },
+        {
+          "id": 15,
+          "value": 0.68409121
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.847591043
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 1.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.775590718
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 7,
+      "rightModuleId": 599,
+      "data": {
+        "dim_decibels": 12.0,
+        "poly_channel_offset": -1
+      },
+      "pos": [
+        39,
+        0
+      ]
+    },
+    {
+      "id": 950,
+      "plugin": "Autodafe-DrumKit",
+      "version": "1.0.0",
+      "model": "DrumsHiHatClosed",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 944,
+      "rightModuleId": 947,
+      "data": {
+        "sampletype": 8
+      },
+      "pos": [
+        58,
+        1
+      ]
+    },
+    {
+      "id": 952,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 953,
+      "rightModuleId": 7,
+      "text": "This is an implementation of  Patching Ideas  #1 and #2 from  Page 3 of the documentation for That Rhythm Thing V2. Just set up the AUDIO-8 and hit the big button on the left.\n\nThe patch, as saved, is using Rhythm Patterns 22 and 24 on Tracks 1 and 2, respectively (see Page 2 of the Doc). \n\nSpend a little time listening while watching the PROTOTYPE display, the VU meters and the Scope. This is a good way to see how Track 2 sliding forward a step after every EOC event (ding!) changes the rhythm.\n\nThen, start \"dialing in\" new rhythm patterns and muting different tracks in the mixer just to hear what happens ... \n",
+      "pos": [
+        10,
+        0
+      ]
+    },
+    {
+      "id": 953,
+      "plugin": "RJModules",
+      "version": "1.7.2",
+      "model": "Button",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 952,
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 954,
+      "plugin": "CountModula",
+      "version": "1.14.0",
+      "model": "LightStrip",
+      "params": [],
+      "leftModuleId": 938,
+      "rightModuleId": 937,
+      "data": {
+        "moduleVersion": 1,
+        "color": [
+          0.675000191,
+          0.997000337,
+          0.0
+        ],
+        "narrowMode": false,
+        "theme": 3
+      },
+      "pos": [
+        13,
+        1
+      ]
+    },
+    {
+      "id": 957,
+      "plugin": "CountModula",
+      "version": "1.14.0",
+      "model": "LightStrip",
+      "params": [],
+      "leftModuleId": 937,
+      "rightModuleId": 936,
+      "data": {
+        "moduleVersion": 1,
+        "color": [
+          0.675000191,
+          0.997000337,
+          0.0
+        ],
+        "narrowMode": false,
+        "theme": 3
+      },
+      "pos": [
+        29,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 1673,
+      "outputModuleId": 939,
+      "outputId": 4,
+      "inputModuleId": 937,
+      "inputId": 1,
+      "color": "#202020"
+    },
+    {
+      "id": 1674,
+      "outputModuleId": 937,
+      "outputId": 0,
+      "inputModuleId": 936,
+      "inputId": 0,
+      "color": "#bee80e"
+    },
+    {
+      "id": 1675,
+      "outputModuleId": 937,
+      "outputId": 1,
+      "inputModuleId": 936,
+      "inputId": 1,
+      "color": "#bee80e"
+    },
+    {
+      "id": 1676,
+      "outputModuleId": 937,
+      "outputId": 2,
+      "inputModuleId": 935,
+      "inputId": 0,
+      "color": "#4bf2ed"
+    },
+    {
+      "id": 1677,
+      "outputModuleId": 937,
+      "outputId": 3,
+      "inputModuleId": 935,
+      "inputId": 1,
+      "color": "#4bf2ed"
+    },
+    {
+      "id": 1678,
+      "outputModuleId": 937,
+      "outputId": 4,
+      "inputModuleId": 934,
+      "inputId": 0,
+      "color": "#4bf2ed"
+    },
+    {
+      "id": 1679,
+      "outputModuleId": 937,
+      "outputId": 5,
+      "inputModuleId": 934,
+      "inputId": 1,
+      "color": "#ffffff"
+    },
+    {
+      "id": 1685,
+      "outputModuleId": 937,
+      "outputId": 4,
+      "inputModuleId": 947,
+      "inputId": 0,
+      "color": "#4bf2ed"
+    },
+    {
+      "id": 1684,
+      "outputModuleId": 937,
+      "outputId": 1,
+      "inputModuleId": 943,
+      "inputId": 0,
+      "color": "#bee80e"
+    },
+    {
+      "id": 1683,
+      "outputModuleId": 937,
+      "outputId": 0,
+      "inputModuleId": 942,
+      "inputId": 0,
+      "color": "#bee80e"
+    },
+    {
+      "id": 1686,
+      "outputModuleId": 939,
+      "outputId": 0,
+      "inputModuleId": 941,
+      "inputId": 0,
+      "color": "#202020"
+    },
+    {
+      "id": 1687,
+      "outputModuleId": 941,
+      "outputId": 0,
+      "inputModuleId": 948,
+      "inputId": 2,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1688,
+      "outputModuleId": 942,
+      "outputId": 0,
+      "inputModuleId": 948,
+      "inputId": 5,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1689,
+      "outputModuleId": 943,
+      "outputId": 0,
+      "inputModuleId": 948,
+      "inputId": 8,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1690,
+      "outputModuleId": 944,
+      "outputId": 0,
+      "inputModuleId": 948,
+      "inputId": 11,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1692,
+      "outputModuleId": 947,
+      "outputId": 0,
+      "inputModuleId": 948,
+      "inputId": 17,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1694,
+      "outputModuleId": 948,
+      "outputId": 0,
+      "inputModuleId": 599,
+      "inputId": 0,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1695,
+      "outputModuleId": 948,
+      "outputId": 1,
+      "inputModuleId": 599,
+      "inputId": 1,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1691,
+      "outputModuleId": 950,
+      "outputId": 0,
+      "inputModuleId": 948,
+      "inputId": 14,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1697,
+      "outputModuleId": 937,
+      "outputId": 0,
+      "inputModuleId": 7,
+      "inputId": 0,
+      "color": "#bee80e"
+    },
+    {
+      "id": 1698,
+      "outputModuleId": 937,
+      "outputId": 1,
+      "inputModuleId": 7,
+      "inputId": 1,
+      "color": "#bee80e"
+    },
+    {
+      "id": 1700,
+      "outputModuleId": 953,
+      "outputId": 0,
+      "inputModuleId": 939,
+      "inputId": 1,
+      "color": "#202020"
+    },
+    {
+      "id": 1672,
+      "outputModuleId": 939,
+      "outputId": 1,
+      "inputModuleId": 937,
+      "inputId": 0,
+      "color": "#202020"
+    },
+    {
+      "id": 1680,
+      "outputModuleId": 937,
+      "outputId": 5,
+      "inputModuleId": 699,
+      "inputId": 5,
+      "color": "#ffffff"
+    },
+    {
+      "id": 1693,
+      "outputModuleId": 699,
+      "outputId": 0,
+      "inputModuleId": 948,
+      "inputId": 20,
+      "color": "#dd6c00"
+    },
+    {
+      "id": 1682,
+      "outputModuleId": 937,
+      "outputId": 2,
+      "inputModuleId": 944,
+      "inputId": 0,
+      "color": "#4bf2ed"
+    },
+    {
+      "id": 1706,
+      "outputModuleId": 937,
+      "outputId": 3,
+      "inputModuleId": 948,
+      "inputId": 19,
+      "color": "#ffffff"
+    },
+    {
+      "id": 1681,
+      "outputModuleId": 937,
+      "outputId": 3,
+      "inputModuleId": 950,
+      "inputId": 0,
+      "color": "#4bf2ed"
+    }
+  ]
+}
